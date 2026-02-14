@@ -1,8 +1,9 @@
 /**
  * courseFetcher.js
  * Place in: data/courseFetcher.js
- * 
- * Fetches course data from NCSU catalog API for ClassTracker
+ *
+ * Fetches CSC course data from NCSU catalog API
+ * Correct endpoint found via DevTools: /course-search/api/?page=fose&route=search&subject=CSC
  */
 
 const fs = require('fs').promises;
@@ -10,27 +11,27 @@ const path = require('path');
 
 class CourseFetcher {
   constructor(cacheDir = './data') {
-    this.baseUrl = 'https://catalog.ncsu.edu/api/';
+    // FIXED: correct base URL includes /course-search/
+    this.apiUrl = 'https://catalog.ncsu.edu/course-search/api/?page=fose&route=search&subject=CSC';
     this.cacheDir = cacheDir;
-    
+
     this.headers = {
       'Accept': 'application/json, text/javascript, */*; q=0.01',
-      'Accept-Encoding': 'gzip, deflate, br, zstd',
-      'Accept-Language': 'en-US,en;q=0.9',
       'Content-Type': 'application/json',
       'Origin': 'https://catalog.ncsu.edu',
       'Referer': 'https://catalog.ncsu.edu/course-search/',
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
     };
+
+    // FIXED: srcdb must be empty string, not "2025"
+    this.payload = {
+      other: { srcdb: '' },
+      criteria: [{ field: 'subject', value: 'CSC' }]
+    };
   }
 
-  /**
-   * Fetch all courses from the catalog
-   * @param {boolean} useCache - Whether to use cached data if available
-   * @returns {Promise<Array>} Array of course objects
-   */
   async fetchAllCourses(useCache = true) {
-    const cacheFile = path.join(this.cacheDir, 'courses_cache.json');
+    const cacheFile = path.join(this.cacheDir, 'csc_courses.json');
 
     // Check cache first
     if (useCache) {
@@ -43,19 +44,13 @@ class CourseFetcher {
       }
     }
 
-    // Fetch fresh data
-    console.log('🔍 Fetching courses from NCSU catalog...');
+    console.log('🔍 Fetching CSC courses from NCSU catalog...');
 
     try {
-      // Adjust this based on your DevTools Payload tab
-      const params = new URLSearchParams({
-        page: 'fose',
-        route: 'search'
-      });
-
-      const response = await fetch(`${this.baseUrl}?${params}`, {
+      const response = await fetch(this.apiUrl, {
         method: 'POST',
-        headers: this.headers
+        headers: this.headers,
+        body: JSON.stringify(this.payload)
       });
 
       if (!response.ok) {
@@ -63,19 +58,17 @@ class CourseFetcher {
       }
 
       const data = await response.json();
-      
-      // Save to cache
-      await this._saveCache(cacheFile, data);
-      
-      const count = Array.isArray(data) ? data.length : data.count || 'unknown';
-      console.log(`✓ Fetched ${count} courses`);
-      
-      return data;
+      const courses = this._parseAndDeduplicate(data.results || []);
+
+      await this._saveCache(cacheFile, courses);
+      console.log(`✓ Fetched ${courses.length} unique CSC courses`);
+
+      return courses;
 
     } catch (error) {
       console.error(`✗ Error fetching courses: ${error.message}`);
-      
-      // Try to use stale cache as fallback
+
+      // Fall back to stale cache if available
       try {
         const staleData = await this._loadCache(cacheFile);
         console.log('⚠ Using stale cache as fallback');
@@ -86,129 +79,75 @@ class CourseFetcher {
     }
   }
 
-  /**
-   * Get a specific course by code
-   * @param {string} courseCode - e.g., "CSC 216"
-   * @param {Array} courses - Optional array of courses to search
-   * @returns {Promise<Object|null>}
-   */
-  async getCourseByCode(courseCode, courses = null) {
-    if (!courses) {
-      courses = await this.fetchAllCourses();
-    }
+  _parseAndDeduplicate(results) {
+    const seen = new Set();
+    return results
+      .filter(course => {
+        if (seen.has(course.code)) return false;
+        seen.add(course.code);
+        return true;
+      })
+      .map(course => ({
+        id: course.code.replace(' ', ''),  // "CSC 116" -> "CSC116"
+        code: course.code,                 // "CSC 116"
+        title: course.title,
+        key: course.key,                   // used for detail lookups later
+        credits: 3,                        // default - enrich later if needed
+        prerequisites: [],                 // enrich later with Bedrock
+        offered: []                        // enrich later if needed
+      }));
+  }
 
+  async getCourseByCode(courseCode, courses = null) {
+    if (!courses) courses = await this.fetchAllCourses();
     if (!courses) return null;
 
     const code = courseCode.toUpperCase().trim();
-
-    return courses.find(course => {
-      const courseCodeField = (course.code || course.courseCode || course.course_code || '').toUpperCase().trim();
-      return courseCodeField === code;
-    }) || null;
+    return courses.find(c => c.code.toUpperCase() === code) || null;
   }
 
-  /**
-   * Get all courses for a subject
-   * @param {string} subject - e.g., "CSC", "MA"
-   * @param {Array} courses - Optional array of courses to search
-   * @returns {Promise<Array>}
-   */
-  async getCoursesBySubject(subject, courses = null) {
-    if (!courses) {
-      courses = await this.fetchAllCourses();
-    }
-
-    if (!courses) return [];
-
-    const subjectCode = subject.toUpperCase().trim();
-
-    return courses.filter(course => {
-      const courseSubject = (course.subject || course.courseSubject || '').toUpperCase().trim();
-      return courseSubject === subjectCode;
-    });
+  async getCoursesBySubject(courses = null) {
+    if (!courses) courses = await this.fetchAllCourses();
+    return courses || [];
   }
 
-  /**
-   * Search courses by keyword
-   * @param {string} query - Search term
-   * @param {Array} courses - Optional array of courses to search
-   * @returns {Promise<Array>}
-   */
   async searchCourses(query, courses = null) {
-    if (!courses) {
-      courses = await this.fetchAllCourses();
-    }
-
+    if (!courses) courses = await this.fetchAllCourses();
     if (!courses) return [];
 
-    const searchTerm = query.toLowerCase();
-
-    return courses.filter(course => {
-      const title = (course.title || course.name || '').toLowerCase();
-      const desc = (course.description || course.desc || '').toLowerCase();
-      const code = (course.code || course.courseCode || '').toLowerCase();
-
-      return title.includes(searchTerm) || 
-             desc.includes(searchTerm) || 
-             code.includes(searchTerm);
-    });
+    const term = query.toLowerCase();
+    return courses.filter(c =>
+      c.title.toLowerCase().includes(term) ||
+      c.code.toLowerCase().includes(term) ||
+      c.id.toLowerCase().includes(term)
+    );
   }
-
-  /**
-   * Export courses to JSON file
-   * @param {string} filename - Output filename
-   * @returns {Promise<boolean>}
-   */
-  async exportToJson(filename = 'courses.json') {
-    const courses = await this.fetchAllCourses();
-    if (!courses) return false;
-
-    const outputPath = path.join(this.cacheDir, filename);
-    
-    try {
-      await fs.writeFile(outputPath, JSON.stringify(courses, null, 2));
-      console.log(`✓ Exported to ${outputPath}`);
-      return true;
-    } catch (error) {
-      console.error(`✗ Export error: ${error.message}`);
-      return false;
-    }
-  }
-
-  // Private helper methods
 
   async _getCacheAge(cacheFile) {
     try {
       const stats = await fs.stat(cacheFile);
-      const ageMs = Date.now() - stats.mtimeMs;
-      return ageMs / (1000 * 60 * 60); // Convert to hours
+      return (Date.now() - stats.mtimeMs) / (1000 * 60 * 60);
     } catch {
       return Infinity;
     }
   }
 
   async _loadCache(cacheFile) {
-    try {
-      const data = await fs.readFile(cacheFile, 'utf-8');
-      return JSON.parse(data);
-    } catch (error) {
-      throw new Error(`Cache load failed: ${error.message}`);
-    }
+    const data = await fs.readFile(cacheFile, 'utf-8');
+    return JSON.parse(data);
   }
 
   async _saveCache(cacheFile, data) {
     try {
       await fs.writeFile(cacheFile, JSON.stringify(data, null, 2));
-      console.log('💾 Cached data saved');
-      return true;
+      console.log('💾 Saved to', cacheFile);
     } catch (error) {
       console.error(`✗ Cache save error: ${error.message}`);
-      return false;
     }
   }
 }
 
-// Convenience functions for quick use
+// Convenience functions
 async function getAllCourses(useCache = true) {
   const fetcher = new CourseFetcher();
   return await fetcher.fetchAllCourses(useCache);
@@ -219,36 +158,19 @@ async function searchCourse(courseCode) {
   return await fetcher.getCourseByCode(courseCode);
 }
 
-async function getSubjectCourses(subject) {
-  const fetcher = new CourseFetcher();
-  return await fetcher.getCoursesBySubject(subject);
-}
+module.exports = { CourseFetcher, getAllCourses, searchCourse };
 
-// Export for use in other modules
-module.exports = {
-  CourseFetcher,
-  getAllCourses,
-  searchCourse,
-  getSubjectCourses
-};
-
-// Test if run directly
+// Run directly to generate csc_courses.json
 if (require.main === module) {
   (async () => {
-    console.log('Testing Course Fetcher\n' + '='.repeat(50));
-    
+    console.log('Generating CSC course data\n' + '='.repeat(50));
     const fetcher = new CourseFetcher();
-    const courses = await fetcher.fetchAllCourses();
-    
+    const courses = await fetcher.fetchAllCourses(false); // force fresh fetch
+
     if (courses) {
-      console.log(`\nTotal courses: ${courses.length}`);
-      console.log('\nFirst course structure:');
-      console.log(JSON.stringify(courses[0], null, 2).substring(0, 300) + '...');
-      
-      console.log('\n' + '='.repeat(50));
-      console.log('Testing search for CSC courses...');
-      const cscCourses = await fetcher.getCoursesBySubject('CSC');
-      console.log(`Found ${cscCourses.length} CSC courses`);
+      console.log(`\n✓ Total unique courses: ${courses.length}`);
+      console.log('\nSample course:');
+      console.log(JSON.stringify(courses[0], null, 2));
     }
   })();
 }
