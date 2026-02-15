@@ -62,7 +62,7 @@ export default function App() {
 
       {/* Logo persists across ALL screens */}
       <img
-        src="../photos/wolf.png"
+        src="photos/wolf.png"
         alt="Obsidian logo"
         style={{
           position: 'fixed',
