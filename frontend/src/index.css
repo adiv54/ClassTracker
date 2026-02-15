@@ -13,14 +13,14 @@ body {
 
 h1 {
   font-size: 2rem;
-  color: #d4a843;
+  color: #83a6b0;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
 
 h2 {
   font-size: 1.2rem;
-  color: #d4a843;
+  color: #7d909f;
   letter-spacing: 2px;
   margin-bottom: 1rem;
 }
@@ -85,7 +85,7 @@ h2 {
 }
 
 .course-item.checked label {
-  color: #d4a843;
+  color: #4fa3d8;
   text-decoration: line-through;
 }
 
@@ -108,7 +108,7 @@ h2 {
 }
 
 .question-section textarea:focus {
-  border-color: #d4a843;
+  border-color: #b1bec8;
 }
 
 .question-section textarea::placeholder {
@@ -118,7 +118,7 @@ h2 {
 .submit-btn {
   width: 100%;
   padding: 1rem;
-  background: #d4a843;
+  background: #d2dae7;
   color: #0a0a0a;
   border: none;
   font-size: 1rem;
@@ -146,7 +146,7 @@ h2 {
 }
 
 .loading p {
-  color: #d4a843;
+  color: #90d5da;
   letter-spacing: 2px;
   font-size: 1.1rem;
   animation: pulse 2s infinite;
@@ -160,7 +160,7 @@ h2 {
 .result {
   background: #111;
   border: 1px solid #333;
-  border-left: 3px solid #d4a843;
+  border-left: 3px solid #a8b6ba;
   padding: 2rem;
   border-radius: 4px;
   margin-bottom: 2rem;
@@ -172,8 +172,8 @@ h2 {
 .back-btn {
   padding: 0.75rem 2rem;
   background: transparent;
-  color: #d4a843;
-  border: 1px solid #d4a843;
+  color: #accacd;
+  border: 1px solid #bfd2d7;
   font-size: 0.9rem;
   font-family: 'Righteous', sans-serif;
   letter-spacing: 2px;
@@ -184,7 +184,7 @@ h2 {
 }
 
 .back-btn:hover {
-  background: #d4a843;
+  background: #93dce8;
   color: #0a0a0a;
 }
 

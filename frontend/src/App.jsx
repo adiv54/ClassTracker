@@ -62,11 +62,11 @@ export default function App() {
         minHeight: '100vh'
       }}>
         <div className="header">
-          <h1>Obsidian</h1>
+          <h1>Ask a Detective</h1>
           <p>NC State Degree Planner</p>
         </div>
         <div className="loading">
-          <p>Your advisor is reviewing your case file...</p>
+          <p>Your detective is reviewing your case file...</p>
         </div>
       </div>
     )
@@ -76,7 +76,7 @@ export default function App() {
     return (
       <div className="app">
         <div className="header">
-          <h1>Obsidian</h1>
+          <h1>Ask a Detective</h1>
           <p>NC State Degree Planner</p>
         </div>
         <h2>Your Case File</h2>
@@ -91,7 +91,7 @@ export default function App() {
   return (
     <div className="app">
       <div className="header">
-        <h1>Obsidian</h1>
+        <h1>Ask a Detective</h1>
         <p>NC State Degree Planner</p>
       </div>
 
@@ -121,7 +121,7 @@ export default function App() {
       </div>
 
       <div className="question-section">
-        <h2>Ask Your Advisor</h2>
+        <h2>Ask Your Detective</h2>
         <textarea
           placeholder="e.g. What should I take next semester? Can I take CSC 316 yet? I want to focus on AI, what path do you recommend?"
           value={question}
