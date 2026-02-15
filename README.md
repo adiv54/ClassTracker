@@ -1,6 +1,10 @@
 # ClassTracker
 ![An image of the final site](/images/finalProductScreenshot.png)
 
+
+
+
+
 ClassTracker is an AI-powered academic advising tool that gives NC State CS students personalized course and semester recommendations based on the classes they’ve completed, automatically respecting prerequisites, credit limits, and degree requirements. Built as a fully serverless AWS application with a React frontend and an AI-backed Lambda API, it acts like a 24/7 virtual advisor grounded in the official NC State CS degree sequence.
 
 ## Inspiration
