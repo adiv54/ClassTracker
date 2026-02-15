@@ -53,7 +53,7 @@ export default function App() {
 
   return (
     <div className="app" style={{
-      backgroundImage: 'url(/BandW.JPG)',
+      backgroundImage: 'url(/photos/BandW.JPG)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundAttachment: 'fixed',
@@ -62,7 +62,7 @@ export default function App() {
 
       {/* Logo persists across ALL screens */}
       <img
-        src="/wolf.png"
+        src="/photos/wolf.png"
         alt="Obsidian logo"
         style={{
           position: 'fixed',
