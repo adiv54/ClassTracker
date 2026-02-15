@@ -53,7 +53,14 @@ export default function App() {
 
   if (screen === 'loading') {
     return (
-      <div className="app">
+      <div className="app"
+      style={{
+        backgroundImage: 'url(photos/NCSUBandW.JPG)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+        minHeight: '100vh'
+      }}>
         <div className="header">
           <h1>Obsidian</h1>
           <p>NC State Degree Planner</p>
