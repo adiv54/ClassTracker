@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-const API_URL = 'https://59d2p9h3z7.execute-api.us-east-1.amazonaws.com'
+// Old API_URL used with AWS 'https://59d2p9h3z7.execute-api.us-east-1.amazonaws.com'
+const API_URL = 'http://localhost:3001'
 
 export default function App() {
   const [courses, setCourses] = useState([])
