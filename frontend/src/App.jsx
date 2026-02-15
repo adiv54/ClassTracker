@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-const API_URL = 'https://xk0gapmadd.execute-api.us-east-1.amazonaws.com/prod'
+const API_URL = 'https://59d2p9h3z7.execute-api.us-east-1.amazonaws.com'
 
 export default function App() {
   const [courses, setCourses] = useState([])
