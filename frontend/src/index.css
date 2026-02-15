@@ -20,7 +20,7 @@ h1 {
 
 h2 {
   font-size: 1.2rem;
-  color: #7d909f;
+  color: #eceff1;
   letter-spacing: 2px;
   margin-bottom: 1rem;
 }
@@ -39,7 +39,7 @@ h2 {
 }
 
 .header p {
-  color: #888;
+  color: #f1eaea;
   margin-top: 0.5rem;
   letter-spacing: 1px;
   font-size: 0.9rem;
