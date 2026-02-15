@@ -55,7 +55,7 @@ export default function App() {
     return (
       <div className="app"
       style={{
-        backgroundImage: 'url(photos/NCSUBandW.JPG)',
+        backgroundImage: 'url(photos/BandW.JPG)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
