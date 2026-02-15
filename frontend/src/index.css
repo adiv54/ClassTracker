@@ -72,7 +72,7 @@ h2 {
 }
 
 .course-item input[type="checkbox"] {
-  accent-color: #d4a843;
+  accent-color: #e4e1db;
   width: 16px;
   height: 16px;
   cursor: pointer;
@@ -131,7 +131,7 @@ h2 {
 }
 
 .submit-btn:hover {
-  background: #e8c05a;
+  background: #dad0b9;
 }
 
 .submit-btn:disabled {
