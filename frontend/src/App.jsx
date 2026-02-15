@@ -51,91 +51,107 @@ export default function App() {
     setError('')
   }
 
-  if (screen === 'loading') {
-    return (
-      <div className="app"
-      style={{
-        backgroundImage: 'url(photos/BandW.JPG)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
-        minHeight: '100vh'
-      }}>
-        <div className="header">
-          <h1>Ask a Detective</h1>
-          <p>NC State Degree Planner</p>
-        </div>
-        <div className="loading">
-          <p>Your detective is reviewing your case file...</p>
-        </div>
-      </div>
-    )
-  }
-
-  if (screen === 'result') {
-    return (
-      <div className="app">
-        <div className="header">
-          <h1>Ask a Detective</h1>
-          <p>NC State Degree Planner</p>
-        </div>
-        <h2>Your Case File</h2>
-        <div className="result">{reply}</div>
-        <button className="back-btn" onClick={handleReset}>
-          Start New Case
-        </button>
-      </div>
-    )
-  }
-
   return (
-    <div className="app">
-      <div className="header">
-        <h1>Ask a Course Detective</h1>
-        <p>NC State Computer Science Degree Planner</p>
-      </div>
+    <div className="app" style={{
+      backgroundImage: 'url(photos/BandW.JPG)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundAttachment: 'fixed',
+      minHeight: '100vh'
+    }}>
 
-      {error && <div className="error">{error}</div>}
+      {/* Logo persists across ALL screens */}
+      <img
+        src="photos/wolf.png"
+        alt="Obsidian logo"
+        style={{
+          position: 'fixed',
+          top: '16px',
+          left: '20px',
+          width: '52px',
+          height: '52px',
+          zIndex: 1000,
+          opacity: 0.9
+        }}
+      />
 
-      <h2>Mark Completed Courses</h2>
-      <p className="completed-count">
-        {completed.length} of {courses.length} courses completed
-      </p>
-
-      <div className="course-list">
-        {courses.map(course => (
-          <div
-            key={course.id}
-            className={`course-item ${completed.includes(course.id) ? 'checked' : ''}`}
-            onClick={() => toggleCourse(course.id)}
-          >
-            <input
-              type="checkbox"
-              checked={completed.includes(course.id)}
-              onChange={() => toggleCourse(course.id)}
-              onClick={e => e.stopPropagation()}
-            />
-            <label>{course.code} — {course.title}</label>
+      {screen === 'loading' && (
+        <div>
+          <div className="header">
+            <h1>Ask a Detective</h1>
+            <p>NC State Degree Planner</p>
           </div>
-        ))}
-      </div>
+          <div className="loading">
+            <p>Your detective is reviewing your case file...</p>
+          </div>
+        </div>
+      )}
 
-      <div className="question-section">
-        <h2>Ask Your Course Detective</h2>
-        <textarea
-          placeholder="e.g. What should I take next semester? Can I take CSC 316 yet? I want to focus on AI, what path do you recommend?"
-          value={question}
-          onChange={e => setQuestion(e.target.value)}
-        />
-      </div>
+      {screen === 'result' && (
+        <div>
+          <div className="header">
+            <h1>Ask a Detective</h1>
+            <p>NC State Degree Planner</p>
+          </div>
+          <h2>Your Case File</h2>
+          <div className="result">{reply}</div>
+          <button className="back-btn" onClick={handleReset}>
+            Start New Case
+          </button>
+        </div>
+      )}
 
-      <button
-        className="submit-btn"
-        onClick={handleSubmit}
-        disabled={!question.trim() || loading}
-      >
-        Consult Your Course Detective
-      </button>
+      {screen === 'form' && (
+        <div>
+          <div className="header">
+            <h1>Ask a Course Detective</h1>
+            <p>NC State Computer Science Degree Planner</p>
+          </div>
+
+          {error && <div className="error">{error}</div>}
+
+          <h2>Mark Completed Courses</h2>
+          <p className="completed-count">
+            {completed.length} of {courses.length} courses completed
+          </p>
+
+          <div className="course-list">
+            {courses.map(course => (
+              <div
+                key={course.id}
+                className={`course-item ${completed.includes(course.id) ? 'checked' : ''}`}
+                onClick={() => toggleCourse(course.id)}
+              >
+                <input
+                  type="checkbox"
+                  checked={completed.includes(course.id)}
+                  onChange={() => toggleCourse(course.id)}
+                  onClick={e => e.stopPropagation()}
+                />
+                <label>{course.code} — {course.title}</label>
+              </div>
+            ))}
+          </div>
+
+          <div className="question-section">
+            <h2>Ask Your Course Detective</h2>
+            <textarea
+              placeholder="e.g. What should I take next semester? Can I take CSC 316 yet? I want to focus on AI, what path do you recommend?"
+              value={question}
+              onChange={e => setQuestion(e.target.value)}
+            />
+          </div>
+
+          <button
+            className="submit-btn"
+            onClick={handleSubmit}
+            disabled={!question.trim() || loading}
+          >
+            Consult Your Course Detective
+          </button>
+        </div>
+      )}
+
     </div>
   )
 }
