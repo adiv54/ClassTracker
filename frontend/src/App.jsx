@@ -91,8 +91,8 @@ export default function App() {
   return (
     <div className="app">
       <div className="header">
-        <h1>Ask a Detective</h1>
-        <p>NC State Degree Planner</p>
+        <h1>Ask a Course Detective</h1>
+        <p>NC State Computer Science Degree Planner</p>
       </div>
 
       {error && <div className="error">{error}</div>}
@@ -121,7 +121,7 @@ export default function App() {
       </div>
 
       <div className="question-section">
-        <h2>Ask Your Detective</h2>
+        <h2>Ask Your Course Detective</h2>
         <textarea
           placeholder="e.g. What should I take next semester? Can I take CSC 316 yet? I want to focus on AI, what path do you recommend?"
           value={question}
@@ -134,7 +134,7 @@ export default function App() {
         onClick={handleSubmit}
         disabled={!question.trim() || loading}
       >
-        Consult Your Advisor
+        Consult Your Course Detective
       </button>
     </div>
   )
