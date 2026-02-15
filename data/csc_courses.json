@@ -1,0 +1,1343 @@
+[
+  {
+    "id": "CSC110",
+    "code": "CSC 110",
+    "title": "Computer Science Principles - The Beauty and Joy of Computing",
+    "key": "1788",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC111",
+    "code": "CSC 111",
+    "title": "Introduction to Computing: Python",
+    "key": "1789",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC112",
+    "code": "CSC 112",
+    "title": "Introduction to Computing-FORTRAN",
+    "key": "1790",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC113",
+    "code": "CSC 113",
+    "title": "Introduction to Computing - MATLAB",
+    "key": "7653",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC116",
+    "code": "CSC 116",
+    "title": "Introduction to Computing - Java",
+    "key": "1791",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC216",
+    "code": "CSC 216",
+    "title": "Software Development Fundamentals",
+    "key": "1792",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC217",
+    "code": "CSC 217",
+    "title": "Software Development Fundamentals Lab",
+    "key": "8736",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC226",
+    "code": "CSC 226",
+    "title": "Discrete Mathematics",
+    "key": "1793",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC230",
+    "code": "CSC 230",
+    "title": "C and Software Tools",
+    "key": "1794",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC236",
+    "code": "CSC 236",
+    "title": "Computer Organization and Assembly Language for Computer Scientists",
+    "key": "1795",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC246",
+    "code": "CSC 246",
+    "title": "Concepts and Facilities of Operating Systems for Computer Scientists",
+    "key": "1796",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC251",
+    "code": "CSC 251",
+    "title": "Python Applications",
+    "key": "9741",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC281",
+    "code": "CSC 281",
+    "title": "Foundations of Interactive Game Design",
+    "key": "7568",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC291",
+    "code": "CSC 291",
+    "title": "Special Topics in Computer Science",
+    "key": "1797",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC293",
+    "code": "CSC 293",
+    "title": "Computer Science Teaching Assistant Training",
+    "key": "9350",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC297",
+    "code": "CSC 297",
+    "title": "Cybersecurity Topics",
+    "key": "8981",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC298",
+    "code": "CSC 298",
+    "title": "Introduction to Computer Science Research Methods",
+    "key": "9116",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC299",
+    "code": "CSC 299",
+    "title": "Mentored Research in Computer Science",
+    "key": "9117",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC302",
+    "code": "CSC 302",
+    "title": "Introduction to Numerical Methods",
+    "key": "1798",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC316",
+    "code": "CSC 316",
+    "title": "Data Structures and Algorithms",
+    "key": "1799",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC326",
+    "code": "CSC 326",
+    "title": "Software Engineering",
+    "key": "1800",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC333",
+    "code": "CSC 333",
+    "title": "Automata, Grammars, and Computability",
+    "key": "1801",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC342",
+    "code": "CSC 342",
+    "title": "Applied Web-based Client-Server Computing",
+    "key": "6548",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC379",
+    "code": "CSC 379",
+    "title": "Ethics in Computing",
+    "key": "1802",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC401",
+    "code": "CSC 401",
+    "title": "Data and Computer Communications Networks",
+    "key": "1803",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC402",
+    "code": "CSC 402",
+    "title": "Networking Projects",
+    "key": "1804",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC405",
+    "code": "CSC 405",
+    "title": "Computer Security",
+    "key": "1805",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC406",
+    "code": "CSC 406",
+    "title": "Architecture Of Parallel Computers",
+    "key": "1862",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC408",
+    "code": "CSC 408",
+    "title": "Software Product Management",
+    "key": "9597",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC411",
+    "code": "CSC 411",
+    "title": "Introduction to Artificial Intelligence",
+    "key": "1806",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC412",
+    "code": "CSC 412",
+    "title": "Compiler Construction",
+    "key": "1869",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC414",
+    "code": "CSC 414",
+    "title": "Foundations of Cryptography",
+    "key": "8790",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC415",
+    "code": "CSC 415",
+    "title": "Software Security",
+    "key": "8592",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC416",
+    "code": "CSC 416",
+    "title": "Introduction to Combinatorics",
+    "key": "1807",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC417",
+    "code": "CSC 417",
+    "title": "Theory of Programming Languages",
+    "key": "1811",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC418",
+    "code": "CSC 418",
+    "title": "Software Analysis and Design",
+    "key": "9805",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC422",
+    "code": "CSC 422",
+    "title": "Automated Learning and Data Analysis",
+    "key": "1812",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC427",
+    "code": "CSC 427",
+    "title": "Introduction to Numerical Analysis I",
+    "key": "1816",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC428",
+    "code": "CSC 428",
+    "title": "Introduction to Numerical Analysis II",
+    "key": "1820",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC431",
+    "code": "CSC 431",
+    "title": "File Organization and Processing",
+    "key": "1824",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC433",
+    "code": "CSC 433",
+    "title": "Privacy in the Digital Age",
+    "key": "8844",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC440",
+    "code": "CSC 440",
+    "title": "Database Management Systems",
+    "key": "1825",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC442",
+    "code": "CSC 442",
+    "title": "Introduction to Data Science",
+    "key": "8216",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC447",
+    "code": "CSC 447",
+    "title": "Introduction to Cloud Computing",
+    "key": "9022",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC450",
+    "code": "CSC 450",
+    "title": "Web Services",
+    "key": "1827",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC451",
+    "code": "CSC 451",
+    "title": "Robot Motion Planning",
+    "key": "9806",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC453",
+    "code": "CSC 453",
+    "title": "Introduction to Internet of Things (IoT) Systems",
+    "key": "1828",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC454",
+    "code": "CSC 454",
+    "title": "Human-Computer Interaction",
+    "key": "1829",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC455",
+    "code": "CSC 455",
+    "title": "Social Computing and Decentralized Artificial Intelligence",
+    "key": "8197",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC456",
+    "code": "CSC 456",
+    "title": "Computer Architecture and Multiprocessors",
+    "key": "1830",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC461",
+    "code": "CSC 461",
+    "title": "Computer Graphics",
+    "key": "1835",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC462",
+    "code": "CSC 462",
+    "title": "Advanced Computer Graphics Projects",
+    "key": "1836",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC469",
+    "code": "CSC 469",
+    "title": "Quantum Programming",
+    "key": "9486",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC471",
+    "code": "CSC 471",
+    "title": "Modern Topics in Cybersecurity",
+    "key": "1837",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC472",
+    "code": "CSC 472",
+    "title": "Cybersecurity Practicum",
+    "key": "1838",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC474",
+    "code": "CSC 474",
+    "title": "Network Security",
+    "key": "1839",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC481",
+    "code": "CSC 481",
+    "title": "Game Engine Foundations",
+    "key": "1840",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC482",
+    "code": "CSC 482",
+    "title": "Advanced Computer Game Projects",
+    "key": "6549",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC484",
+    "code": "CSC 484",
+    "title": "Building Game AI",
+    "key": "7649",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC486",
+    "code": "CSC 486",
+    "title": "Computational Visual Narrative",
+    "key": "9018",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC490",
+    "code": "CSC 490",
+    "title": "Independent Study in Computer Science",
+    "key": "9035",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC491",
+    "code": "CSC 491",
+    "title": "Special Topics in Computer Science",
+    "key": "1845",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC492",
+    "code": "CSC 492",
+    "title": "Senior Design Project",
+    "key": "1844",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC499",
+    "code": "CSC 499",
+    "title": "Independent Research in Computer Science",
+    "key": "1846",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC501",
+    "code": "CSC 501",
+    "title": "Operating Systems Principles",
+    "key": "1847",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC503",
+    "code": "CSC 503",
+    "title": "Computational Applied Logic",
+    "key": "1848",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC505",
+    "code": "CSC 505",
+    "title": "Design and Analysis Of Algorithms",
+    "key": "1849",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC506",
+    "code": "CSC 506",
+    "title": "Architecture Of Parallel Computers",
+    "key": "1850",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC510",
+    "code": "CSC 510",
+    "title": "Software Engineering",
+    "key": "1866",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC512",
+    "code": "CSC 512",
+    "title": "Compiler Construction",
+    "key": "1867",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC513",
+    "code": "CSC 513",
+    "title": "Electronic Commerce Technology",
+    "key": "1871",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC514",
+    "code": "CSC 514",
+    "title": "Foundations of Cryptography",
+    "key": "8794",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC515",
+    "code": "CSC 515",
+    "title": "Software Security",
+    "key": "7750",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC517",
+    "code": "CSC 517",
+    "title": "Object-Oriented Design and Development",
+    "key": "1873",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC519",
+    "code": "CSC 519",
+    "title": "DevOps: Modern Software Engineering Practices",
+    "key": "8130",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC520",
+    "code": "CSC 520",
+    "title": "Artificial Intelligence I",
+    "key": "1877",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC522",
+    "code": "CSC 522",
+    "title": "Automated Learning and Data Analysis",
+    "key": "1814",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC530",
+    "code": "CSC 530",
+    "title": "Computational Methods for Molecular Biology",
+    "key": "1878",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC533",
+    "code": "CSC 533",
+    "title": "Privacy in the Digital Age",
+    "key": "1879",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC537",
+    "code": "CSC 537",
+    "title": "Systems Attacks and Defenses",
+    "key": "9137",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC540",
+    "code": "CSC 540",
+    "title": "Database Management Concepts and Systems",
+    "key": "1880",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC541",
+    "code": "CSC 541",
+    "title": "Advanced Data Structures",
+    "key": "1881",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC542",
+    "code": "CSC 542",
+    "title": "Neural Networks",
+    "key": "2396",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC546",
+    "code": "CSC 546",
+    "title": "Management Decision and Control Systems",
+    "key": "1882",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC547",
+    "code": "CSC 547",
+    "title": "Cloud Computing Technology",
+    "key": "2354",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC548",
+    "code": "CSC 548",
+    "title": "Parallel Systems",
+    "key": "1886",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC549",
+    "code": "CSC 549",
+    "title": "Embedded/Real-Time Systems for Autonomous Driving with Machine Learning",
+    "key": "9562",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC554",
+    "code": "CSC 554",
+    "title": "Human-Computer Interaction",
+    "key": "1887",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC555",
+    "code": "CSC 555",
+    "title": "Social Computing and Decentralized Artificial Intelligence",
+    "key": "8037",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC561",
+    "code": "CSC 561",
+    "title": "Principles of Computer Graphics",
+    "key": "1888",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC562",
+    "code": "CSC 562",
+    "title": "Introduction to Game Engine Design",
+    "key": "8061",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC563",
+    "code": "CSC 563",
+    "title": "Visual Interfaces for Mobile Devices",
+    "key": "7749",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC565",
+    "code": "CSC 565",
+    "title": "Graph Theory",
+    "key": "1889",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC568",
+    "code": "CSC 568",
+    "title": "Enterprise Storage Architecture",
+    "key": "7483",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC569",
+    "code": "CSC 569",
+    "title": "Quantum Computing",
+    "key": "9492",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC570",
+    "code": "CSC 570",
+    "title": "Computer Networks",
+    "key": "1900",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC572",
+    "code": "CSC 572",
+    "title": "Optimizations and Algorithms",
+    "key": "9523",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC573",
+    "code": "CSC 573",
+    "title": "Internet Protocols",
+    "key": "1902",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC574",
+    "code": "CSC 574",
+    "title": "Computer and Network Security",
+    "key": "1906",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC575",
+    "code": "CSC 575",
+    "title": "Introduction to Wireless Networking",
+    "key": "1910",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC576",
+    "code": "CSC 576",
+    "title": "Networking Services: QoS, Signaling, Processes",
+    "key": "1914",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC577",
+    "code": "CSC 577",
+    "title": "Switched Network Management",
+    "key": "8019",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC578",
+    "code": "CSC 578",
+    "title": "LTE and 5G Communications",
+    "key": "2365",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC579",
+    "code": "CSC 579",
+    "title": "Introduction to Computer Performance Modeling",
+    "key": "1918",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC580",
+    "code": "CSC 580",
+    "title": "Numerical Analysis I",
+    "key": "1927",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC581",
+    "code": "CSC 581",
+    "title": "Game Engine Foundations",
+    "key": "1842",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC582",
+    "code": "CSC 582",
+    "title": "Computer Models of Interactive Narrative",
+    "key": "1931",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC583",
+    "code": "CSC 583",
+    "title": "Introduction to Parallel Computing",
+    "key": "1932",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC584",
+    "code": "CSC 584",
+    "title": "Building Game AI",
+    "key": "7651",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC591",
+    "code": "CSC 591",
+    "title": "Special Topics In Computer Science",
+    "key": "1937",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC595",
+    "code": "CSC 595",
+    "title": "Cybersecurity Practicum",
+    "key": "9173",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC600",
+    "code": "CSC 600",
+    "title": "Computer Science Graduate Orientation",
+    "key": "1938",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC630",
+    "code": "CSC 630",
+    "title": "Master's Independent Study",
+    "key": "1939",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC685",
+    "code": "CSC 685",
+    "title": "Master's Supervised Teaching",
+    "key": "1940",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC688",
+    "code": "CSC 688",
+    "title": "Non-Thesis Masters Continuous Registration - Half Time Registration",
+    "key": "1941",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC689",
+    "code": "CSC 689",
+    "title": "Non-Thesis Master Continuous Registration - Full Time Registration",
+    "key": "1942",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC690",
+    "code": "CSC 690",
+    "title": "Master's Examination",
+    "key": "1943",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC693",
+    "code": "CSC 693",
+    "title": "Master's Supervised Research",
+    "key": "1944",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC695",
+    "code": "CSC 695",
+    "title": "Master's Thesis Research",
+    "key": "1945",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC696",
+    "code": "CSC 696",
+    "title": "Summer Thesis Research",
+    "key": "1946",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC699",
+    "code": "CSC 699",
+    "title": "Master's Thesis Preparation",
+    "key": "1947",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC705",
+    "code": "CSC 705",
+    "title": "Operating Systems Security",
+    "key": "7297",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC707",
+    "code": "CSC 707",
+    "title": "Automata, Languages and Computability Theory",
+    "key": "1948",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC710",
+    "code": "CSC 710",
+    "title": "Software Engineering as a Human Activity",
+    "key": "7771",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC711",
+    "code": "CSC 711",
+    "title": "Geospatial Data Management",
+    "key": "8462",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC712",
+    "code": "CSC 712",
+    "title": "Software Testing and Reliability",
+    "key": "1949",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC714",
+    "code": "CSC 714",
+    "title": "Real Time Computer Systems",
+    "key": "1950",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC720",
+    "code": "CSC 720",
+    "title": "Artificial Intelligence II",
+    "key": "1951",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC722",
+    "code": "CSC 722",
+    "title": "Advanced Topics in Machine Learning",
+    "key": "7470",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC724",
+    "code": "CSC 724",
+    "title": "Advanced Distributed Systems",
+    "key": "6947",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC742",
+    "code": "CSC 742",
+    "title": "Database Management Systems",
+    "key": "1952",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC750",
+    "code": "CSC 750",
+    "title": "Service-Oriented Computing",
+    "key": "1954",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC761",
+    "code": "CSC 761",
+    "title": "Advanced Topics in Computer Graphics",
+    "key": "1955",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC762",
+    "code": "CSC 762",
+    "title": "Stochastic Simulation",
+    "key": "1956",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC766",
+    "code": "CSC 766",
+    "title": "Code Optimization for Scalar and Parallel Programs",
+    "key": "1965",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC772",
+    "code": "CSC 772",
+    "title": "Survivable Networks",
+    "key": "6981",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC773",
+    "code": "CSC 773",
+    "title": "Advanced Topics in Internet Protocols",
+    "key": "1966",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC774",
+    "code": "CSC 774",
+    "title": "Advanced Network Security",
+    "key": "1970",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC780",
+    "code": "CSC 780",
+    "title": "Numerical Analysis II",
+    "key": "1974",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC789",
+    "code": "CSC 789",
+    "title": "Cellular and Telecommunications Security",
+    "key": "9453",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC791",
+    "code": "CSC 791",
+    "title": "Advanced Topics In Computer Science",
+    "key": "1978",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC801",
+    "code": "CSC 801",
+    "title": "Seminar in Computer Science",
+    "key": "1979",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC830",
+    "code": "CSC 830",
+    "title": "Doctoral Independent Study",
+    "key": "1980",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC885",
+    "code": "CSC 885",
+    "title": "Doctoral Supervised Teaching",
+    "key": "1981",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC890",
+    "code": "CSC 890",
+    "title": "Doctoral Preliminary Exam",
+    "key": "1982",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC893",
+    "code": "CSC 893",
+    "title": "Doctoral Supervised Research",
+    "key": "1983",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC895",
+    "code": "CSC 895",
+    "title": "Doctoral Dissertation Research",
+    "key": "1984",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC896",
+    "code": "CSC 896",
+    "title": "Summer Dissertation Research",
+    "key": "1985",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  },
+  {
+    "id": "CSC899",
+    "code": "CSC 899",
+    "title": "Doctoral Dissertation Preparation",
+    "key": "1986",
+    "credits": 3,
+    "prerequisites": [],
+    "offered": []
+  }
+]
