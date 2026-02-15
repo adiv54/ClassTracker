@@ -68,8 +68,8 @@ export default function App() {
           position: 'fixed',
           top: '16px',
           left: '20px',
-          width: '52px',
-          height: '52px',
+          width: '100px',
+          height: '100px',
           zIndex: 1000,
           opacity: 0.9
         }}
